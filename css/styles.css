@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway-v19-latin-700.woff) format("woff"),
+    url(../fonts/raleway-v19-latin-700.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --focus-cl: #2196f3;
+  --title-cl: #757575;
+  --bg-footer-cl: #2f303a;
+  --logo-cl: black;
+  --logo-footer-cl: white;
+
+  --title-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+}
+
+/* General styles */
+
+body {
+  background-color: #ffffff;
+  font-family: var(--title-font);
+}
+
+.link {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.list {
+  list-style: none;
+}
+
+/* logo */
+
+.logo {
+  color: var(--focus-cl);
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-2 {
+  color: var(--logo-footer-cl);
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-3 {
+  color: var(--logo-cl);
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* site-nav */
+
+.site-nav .link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.cont-nav .link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.cont-nav .link:hover,
+.cont-nav .link:focus {
+  color: #2196f3;
+}
+
+.address {
+  font-family: Roboto;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* main section */
+
+.but {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+}
+.but:hover,
+.but:focus {
+  background-color: #2196f3;
+  color: white;
+}
+
+.main {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.title {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* footer */
+
+.bg-footer {
+  background-color: var(--bg-footer-cl);
+}
