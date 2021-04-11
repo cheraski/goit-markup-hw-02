@@ -8,10 +8,12 @@
 
 :root {
   --focus-cl: #2196f3;
+  --main-title-cl: #212121;
   --title-cl: #757575;
-  --bg-footer-cl: #2f303a;
   --logo-cl: black;
   --logo-footer-cl: white;
+  --bg-footer-cl: #2f303a;
+  --button-cl: #f5f4fa;
 
   --title-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
@@ -26,6 +28,7 @@ body {
 
 .link {
   text-decoration: none;
+  font-style: normal;
 }
 ul {
   list-style: none;
@@ -38,7 +41,7 @@ ul {
 
 .logo {
   color: var(--focus-cl);
-  font-family: Raleway;
+  font-family: var(--logo-font);
 
   font-weight: bold;
   font-size: 26px;
@@ -47,7 +50,7 @@ ul {
 }
 .logo-2 {
   color: var(--logo-footer-cl);
-  font-family: Raleway;
+  font-family: var(--logo-font);
 
   font-weight: bold;
   font-size: 26px;
@@ -56,7 +59,7 @@ ul {
 }
 .logo-3 {
   color: var(--logo-cl);
-  font-family: Raleway;
+  font-family: var(--logo-font);
 
   font-weight: bold;
   font-size: 26px;
@@ -67,78 +70,164 @@ ul {
 /* site-nav */
 
 .site-nav .link {
-  font-family: Roboto;
+  font-family: var(--title-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--main-title-cl);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--focus-cl);
 }
 .cont-nav .link {
-  font-family: Roboto;
+  font-family: var(--title-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--title-cl);
 }
 .cont-nav .link:hover,
 .cont-nav .link:focus {
-  color: #2196f3;
+  color: var(--focus-cl);
 }
 
 .address {
-  font-family: Roboto;
-  font-weight: 400;
+  font-family: var(--title-font);
   text-decoration: none;
+  font-style: normal;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--logo-footer-cl);
 }
 
 /* main section */
 
-.but {
+.hero {
+  font-family: var (--title-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--logo-footer-cl);
+  background-color: var(--bg-footer-cl);
+}
+.features-list {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-title-cl);
+}
+.features {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--title-cl);
+}
+
+.activity {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var (--main-title-cl);
+}
+.team {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-title-cl);
+}
+
+.position {
   font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-cl);
+}
+.but {
+  font-family: var(--title-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: #f5f4fa;
-  color: #212121;
+  background-color: var(--button-cl);
+  color: var(--main-title-cl);
+  cursor: pointer;
 }
 .but:hover,
 .but:focus {
-  background-color: #2196f3;
-  color: white;
+  background-color: var(--focus-cl);
+  color: var(--logo-footer-cl);
 }
 
-.main {
-  font-family: Roboto;
+.title-project {
+  font-family: var(--title-font);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-title-c);
 }
-.title {
-  font-family: Roboto;
-  font-weight: 400;
+.type-project {
+  font-family: var(--title-font);
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--title-cl);
 }
 
 /* footer */
+
+.ft-link {
+  font-family: var(--title-font);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-cl);
+}
+.ft-link:hover,
+.ft-link:focus {
+  color: var(--focus-cl);
+}
 
 .bg-footer {
   background-color: var(--bg-footer-cl);
